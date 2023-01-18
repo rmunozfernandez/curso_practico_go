@@ -14,7 +14,8 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	operacion := scanner.Text()
-	operador := "*"
+	scanner.Scan()
+	operador := scanner.Text()
 	valores := strings.Split(operacion, operador)
 	fmt.Println(valores)
 	fmt.Println(valores[0] + valores[1])
